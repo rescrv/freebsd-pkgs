@@ -1,5 +1,5 @@
 PORTNAME=		rescrv-poudriere
-PORTVERSION=	20161014
+PORTVERSION=	20161015
 CATEGORIES=		rescrv
 MASTER_SITES=	# none
 DISTFILES=		# none
@@ -11,10 +11,10 @@ COMMENT=	Meta port for poudriere builder
 NO_BUILD=		yes
 NO_WRKSUBDIR=	yes
 
-RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	portmaster>0:${PORTSDIR}/ports-mgmt/portmaster
-RUN_DEPENDS+=	portshaker>0:${PORTSDIR}/ports-mgmt/portshaker
-RUN_DEPENDS+=	poudriere>0:${PORTSDIR}/ports-mgmt/poudriere
+RUN_DEPENDS+=	minimal:rescrv/minimal
+RUN_DEPENDS+=	portmaster:ports-mgmt/portmaster
+RUN_DEPENDS+=	portshaker:ports-mgmt/portshaker
+RUN_DEPENDS+=	poudriere:ports-mgmt/poudriere
 
 do-install: build
 		@${DO_NADA}
