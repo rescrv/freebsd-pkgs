@@ -1,5 +1,5 @@
 PORTNAME=		rescrv-workstation
-PORTVERSION=	20161013
+PORTVERSION=	20161014
 CATEGORIES=		rescrv
 MASTER_SITES=	# none
 DISTFILES=		# none
@@ -12,6 +12,7 @@ NO_BUILD=		yes
 NO_WRKSUBDIR=	yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
+RUN_DEPENDS+=	rescrv-devel>0:${PORTSDIR}/rescrv/devel
 RUN_DEPENDS+=	bitstream-vera>0:${PORTSDIR}/x11-fonts/bitstream-vera
 RUN_DEPENDS+=	dmenu>0:${PORTSDIR}/x11/dmenu
 RUN_DEPENDS+=	firefox>0:${PORTSDIR}/www/firefox
