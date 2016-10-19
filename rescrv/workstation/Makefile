@@ -1,5 +1,5 @@
 PORTNAME=		rescrv-workstation
-PORTVERSION=	20161015
+PORTVERSION=	20161016
 CATEGORIES=		rescrv
 MASTER_SITES=	# none
 DISTFILES=		# none
@@ -39,6 +39,7 @@ RUN_DEPENDS+=	xscreensaver>0:${PORTSDIR}/x11/xscreensaver
 RUN_DEPENDS+=	xsetroot>0:${PORTSDIR}/x11/xsetroot
 RUN_DEPENDS+=	zip>0:${PORTSDIR}/archivers/zip
 RUN_DEPENDS+=	gtk-murrine-engine>0:${PORTSDIR}/x11-themes/gtk-murrine-engine
+RUN_DEPENDS+=	noto>0:${PORTSDIR}/x11-fonts/noto
 
 do-install: build
 		@${DO_NADA}
