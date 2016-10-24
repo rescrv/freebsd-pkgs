@@ -70,11 +70,12 @@ p.depends_upon('ports-mgmt/portmaster')
 p.depends_upon('ports-mgmt/portshaker')
 p.depends_upon('ports-mgmt/poudriere')
 
-p = Package('mail', 20161003)
+p = Package('mail', 20161004)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('mail/msmtp')
 p.depends_upon('mail/mutt')
 p.depends_upon('mail/notmuch')
+p.depends_upon('mail/offlineimap')
 
 p = Package('devel', 20161003)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
