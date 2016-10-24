@@ -1,15 +1,15 @@
-PORTNAME=		rescrv-poudriere
-PORTVERSION=	20161015
-CATEGORIES=		rescrv
-MASTER_SITES=	# none
-DISTFILES=		# none
-EXTRACT_ONLY=	# none
+PORTNAME=      rescrv-builder
+PORTVERSION=   20161015
+CATEGORIES=    rescrv
+MASTER_SITES=  # none
+DISTFILES=     # none
+EXTRACT_ONLY=  # none
 
-MAINTAINER=	robert@rescrv.net
-COMMENT=	Meta port for poudriere builder
+MAINTAINER=    robert@rescrv.net
+COMMENT=       builder meta package
 
-NO_BUILD=		yes
-NO_WRKSUBDIR=	yes
+NO_BUILD=      yes
+NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	portmaster>0:${PORTSDIR}/ports-mgmt/portmaster

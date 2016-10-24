@@ -1,15 +1,15 @@
-PORTNAME=		rescrv-mail
-PORTVERSION=	20161002
-CATEGORIES=		rescrv
-MASTER_SITES=	# none
-DISTFILES=		# none
-EXTRACT_ONLY=	# none
+PORTNAME=      rescrv-mail
+PORTVERSION=   20161003
+CATEGORIES=    rescrv
+MASTER_SITES=  # none
+DISTFILES=     # none
+EXTRACT_ONLY=  # none
 
-MAINTAINER=	robert@rescrv.net
-COMMENT=	Meta port for end-user mail
+MAINTAINER=    robert@rescrv.net
+COMMENT=       mail meta package
 
-NO_BUILD=		yes
-NO_WRKSUBDIR=	yes
+NO_BUILD=      yes
+NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	msmtp>0:${PORTSDIR}/mail/msmtp
