@@ -1,5 +1,5 @@
 PORTNAME=		rescrv-workstation
-PORTVERSION=	20161018
+PORTVERSION=	20161019
 CATEGORIES=		rescrv
 MASTER_SITES=	# none
 DISTFILES=		# none
@@ -32,6 +32,7 @@ RUN_DEPENDS+=	xf86-input-synaptics>0:${PORTSDIR}/x11-drivers/xf86-input-synaptic
 RUN_DEPENDS+=	xf86-video-ati>0:${PORTSDIR}/x11-drivers/xf86-video-ati
 RUN_DEPENDS+=	xf86-video-intel>0:${PORTSDIR}/x11-drivers/xf86-video-intel
 RUN_DEPENDS+=	xfontsel>0:${PORTSDIR}/x11-fonts/xfontsel
+RUN_DEPENDS+=	xset>0:${PORTSDIR}/x11/xset
 RUN_DEPENDS+=	xmodmap>0:${PORTSDIR}/x11/xmodmap
 RUN_DEPENDS+=	xorg-minimal>0:${PORTSDIR}/x11/xorg-minimal
 RUN_DEPENDS+=	xrandr>0:${PORTSDIR}/x11/xrandr
