@@ -17,6 +17,7 @@ RUN_DEPENDS+=	parcellite>0:${PORTSDIR}/deskutils/parcellite
 RUN_DEPENDS+=	gpicview>0:${PORTSDIR}/graphics/gpicview
 RUN_DEPENDS+=	sudo>0:${PORTSDIR}/security/sudo
 RUN_DEPENDS+=	nitrogen>0:${PORTSDIR}/sysutils/nitrogen
+RUN_DEPENDS+=	mplayer>0:${PORTSDIR}/multimedia/mplayer
 RUN_DEPENDS+=	firefox>0:${PORTSDIR}/www/firefox
 RUN_DEPENDS+=	dmenu>0:${PORTSDIR}/x11/dmenu
 RUN_DEPENDS+=	xf86-input-synaptics>0:${PORTSDIR}/x11-drivers/xf86-input-synaptics
