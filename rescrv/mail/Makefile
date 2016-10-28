@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-mail
-PORTVERSION=   20161004
+PORTVERSION=   20161005
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -16,6 +16,7 @@ RUN_DEPENDS+=	msmtp>0:${PORTSDIR}/mail/msmtp
 RUN_DEPENDS+=	mutt>0:${PORTSDIR}/mail/mutt
 RUN_DEPENDS+=	notmuch>0:${PORTSDIR}/mail/notmuch
 RUN_DEPENDS+=	offlineimap>0:${PORTSDIR}/mail/offlineimap
+RUN_DEPENDS+=	p5-Mail-Tools>0:${PORTSDIR}/mail/p5-Mail-Tools
 
 do-install: build
 		@${DO_NADA}
