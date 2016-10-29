@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-mail
-PORTVERSION=   20161006
+PORTVERSION=   20161007
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -12,6 +12,7 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
+RUN_DEPENDS+=	p5-Term-ReadLine-Gnu>0:${PORTSDIR}/devel/p5-Term-ReadLine-Gnu
 RUN_DEPENDS+=	msmtp>0:${PORTSDIR}/mail/msmtp
 RUN_DEPENDS+=	mutt>0:${PORTSDIR}/mail/mutt
 RUN_DEPENDS+=	notmuch>0:${PORTSDIR}/mail/notmuch
