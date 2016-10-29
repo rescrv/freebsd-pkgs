@@ -113,7 +113,7 @@ p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('math/gnuplot')
 p.depends_upon('textproc/py-markdown')
 p.depends_upon('textproc/py-pygments')
-p.depends_upon('www/py-pelican')
+p.depends_upon('www/py-pelican', 'pelican')
 p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('desktop', 20161022)
