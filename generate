@@ -101,10 +101,10 @@ p.depends_upon('devel/glog')
 p.depends_upon('devel/sparsehash')
 p.depends_upon('databases/leveldb')
 
-p = Package('writing', 20161024)
+p = Package('writing', 20161025)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('math/gnuplot')
-p.depends_upon('www/py-pelican')
+p.depends_upon('www/pelican')
 p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('desktop', 20161022)
