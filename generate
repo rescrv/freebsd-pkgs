@@ -20,6 +20,8 @@ class Package(metaclass=IterRegistry):
     def depends_upon(self, port, pkg=None):
         if pkg is None:
             pkg = port.split('/')[-1]
+            if pkg.startswith('py-'):
+                pkg = '${PYTHON_PKGNAMEPREFIX}' + pkg[3:]
         self.depends.append((pkg, port))
 
     def write_port(self):
@@ -104,7 +106,9 @@ p.depends_upon('databases/leveldb')
 p = Package('writing', 20161025)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('math/gnuplot')
-p.depends_upon('www/pelican')
+p.depends_upon('textproc/py-markdown')
+p.depends_upon('textproc/py-pygments')
+p.depends_upon('www/py-pelican')
 p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('desktop', 20161022)

@@ -13,7 +13,9 @@ NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	gnuplot>0:${PORTSDIR}/math/gnuplot
-RUN_DEPENDS+=	pelican>0:${PORTSDIR}/www/pelican
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}markdown>0:${PORTSDIR}/textproc/py-markdown
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pygments>0:${PORTSDIR}/textproc/py-pygments
+RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pelican>0:${PORTSDIR}/www/py-pelican
 RUN_DEPENDS+=	tidy4>0:${PORTSDIR}/www/tidy
 
 do-install: build
