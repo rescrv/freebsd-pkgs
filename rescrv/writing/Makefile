@@ -17,6 +17,7 @@ RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}markdown>0:${PORTSDIR}/textproc/py-markdown
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pygments>0:${PORTSDIR}/textproc/py-pygments
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pelican>0:${PORTSDIR}/www/py-pelican
 RUN_DEPENDS+=	tidy4>0:${PORTSDIR}/www/tidy
+USES= python
 
 do-install: build
 		@${DO_NADA}

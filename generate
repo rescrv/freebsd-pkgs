@@ -16,12 +16,14 @@ class Package(metaclass=IterRegistry):
         self.name = name
         self.version = version
         self.depends = []
+        self.uses = set()
 
     def depends_upon(self, port, pkg=None):
         if pkg is None:
             pkg = port.split('/')[-1]
             if pkg.startswith('py-'):
                 pkg = '${PYTHON_PKGNAMEPREFIX}' + pkg[3:]
+                self.uses.add('python')
         self.depends.append((pkg, port))
 
     def write_port(self):
@@ -29,6 +31,9 @@ class Package(metaclass=IterRegistry):
             os.makedirs('rescrv/%s' % self.name)
         f = open('rescrv/%s/Makefile' % self.name, 'w')
         deps = '\n'.join(['RUN_DEPENDS+=	%s>0:${PORTSDIR}/%s' % x for x in self.depends])
+        uses = ''
+        if self.uses:
+            uses += 'USES= ' + ' '.join(sorted(self.uses)) + '\n'
         f.write('''PORTNAME=      rescrv-{0}
 PORTVERSION=   {1}
 CATEGORIES=    rescrv
@@ -43,12 +48,12 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 {2}
-
+{3}
 do-install: build
 		@${{DO_NADA}}
 
 .include <bsd.port.mk>
-'''.format(self.name, self.version, deps))
+'''.format(self.name, self.version, deps, uses))
         f.flush()
         f.close()
         f = open('rescrv/%s/pkg-descr' % self.name, 'w')
