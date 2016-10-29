@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-writing
-PORTVERSION=   20161022
+PORTVERSION=   20161023
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -13,10 +13,10 @@ NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	gnuplot>0:${PORTSDIR}/math/gnuplot
-RUN_DEPENDS+=	tidy>0:${PORTSDIR}/www/tidy
+RUN_DEPENDS+=	py-markdown>0:${PORTSDIR}/textproc/py-markdown
 RUN_DEPENDS+=	py-pygments>0:${PORTSDIR}/textproc/py-pygments
 RUN_DEPENDS+=	py-pelican>0:${PORTSDIR}/www/py-pelican
-RUN_DEPENDS+=	py-markdown>0:${PORTSDIR}/textproc/py-markdown
+RUN_DEPENDS+=	tidy4>0:${PORTSDIR}/www/tidy
 
 do-install: build
 		@${DO_NADA}
