@@ -108,12 +108,12 @@ p.depends_upon('devel/glog')
 p.depends_upon('devel/sparsehash')
 p.depends_upon('databases/leveldb')
 
-p = Package('writing', 20161025)
+p = Package('writing', 20170301)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('math/gnuplot')
 p.depends_upon('textproc/py-markdown')
 p.depends_upon('textproc/py-pygments')
-p.depends_upon('www/py-pelican', 'pelican')
+p.depends_upon('www/py-pelican')
 p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('desktop', 20161022)
@@ -160,6 +160,12 @@ p = Package('workstation', 20161020)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('rescrv/desktop', 'rescrv-desktop')
 p.depends_upon('rescrv/devel', 'rescrv-devel')
+
+p = Package('mail-server', 20170302)
+p.depends_upon('rescrv/minimal', 'rescrv-minimal')
+p.depends_upon('mail/dovecot2')
+p.depends_upon('mail/postfix')
+p.depends_upon('mail/postgrey')
 
 meta_deps = []
 
