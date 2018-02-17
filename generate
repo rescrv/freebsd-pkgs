@@ -61,9 +61,9 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20161018)
+p = Package('minimal', 20180216)
 p.depends_upon('dns/bind-tools')
-p.depends_upon('editors/vim-lite')
+p.depends_upon('editors/vim-console')
 p.depends_upon('ftp/wget')
 p.depends_upon('net/rsync')
 p.depends_upon('security/keychain')
