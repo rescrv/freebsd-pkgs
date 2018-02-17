@@ -172,19 +172,21 @@ p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('rescrv/desktop', 'rescrv-desktop')
 p.depends_upon('rescrv/devel', 'rescrv-devel')
 
-p = Package('mail-server', 20170302)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('mail/dovecot2')
-p.depends_upon('mail/postfix')
-p.depends_upon('mail/postgrey')
+#p = Package('mail-server', 20170302)
+#p.depends_upon('rescrv/minimal', 'rescrv-minimal')
+#p.depends_upon('mail/dovecot2')
+#p.depends_upon('mail/postfix')
+#p.depends_upon('mail/postgrey')
 
 meta_deps = []
+max_version = 0
 
 for p in Package:
     p.write_port()
+    max_version = max(max_version, p.version)
     meta_deps.append(p.name)
 
-meta = Package('all', 20161020)
+meta = Package('all', max_version)
 for d in meta_deps:
     meta.depends_upon('rescrv/%s' % d, 'rescrv-%s' % d)
 meta.write_port()
