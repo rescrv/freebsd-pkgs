@@ -61,7 +61,8 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20180216)
+p = Package('minimal', 20180217)
+p.depends_upon('archivers/redupe')
 p.depends_upon('dns/bind-tools')
 p.depends_upon('editors/vim-console')
 p.depends_upon('ftp/wget')

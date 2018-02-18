@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20180216
+PORTVERSION=   20180217
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -11,6 +11,7 @@ COMMENT=       minimal meta package
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
+RUN_DEPENDS+=	redupe>0:${PORTSDIR}/archivers/redupe
 RUN_DEPENDS+=	bind-tools>0:${PORTSDIR}/dns/bind-tools
 RUN_DEPENDS+=	vim-console>0:${PORTSDIR}/editors/vim-console
 RUN_DEPENDS+=	wget>0:${PORTSDIR}/ftp/wget

@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20180215
+PORTVERSION=   20180216
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -30,7 +30,7 @@ RUN_DEPENDS+=	clang33>0:${PORTSDIR}/lang/clang33
 RUN_DEPENDS+=	clang34>0:${PORTSDIR}/lang/clang34
 RUN_DEPENDS+=	clang35>0:${PORTSDIR}/lang/clang35
 RUN_DEPENDS+=	clang38>0:${PORTSDIR}/lang/clang38
-RUN_DEPENDS+=	cython>0:${PORTSDIR}/lang/cython
+RUN_DEPENDS+=	py27-cython>0:${PORTSDIR}/lang/cython
 RUN_DEPENDS+=	go>0:${PORTSDIR}/lang/go
 RUN_DEPENDS+=	help2man>0:${PORTSDIR}/misc/help2man
 
