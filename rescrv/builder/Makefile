@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-builder
-PORTVERSION=   20161015
+PORTVERSION=   20180224
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -12,7 +12,7 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	portmaster>0:${PORTSDIR}/ports-mgmt/portmaster
+RUN_DEPENDS+=	portlint>0:${PORTSDIR}/ports-mgmt/portlint
 RUN_DEPENDS+=	portshaker>0:${PORTSDIR}/ports-mgmt/portshaker
 RUN_DEPENDS+=	poudriere>0:${PORTSDIR}/ports-mgmt/poudriere
 
