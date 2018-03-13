@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-desktop
-PORTVERSION=   20180220
+PORTVERSION=   20180311
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,7 +19,6 @@ RUN_DEPENDS+=	gpicview>0:${PORTSDIR}/graphics/gpicview
 RUN_DEPENDS+=	sudo>0:${PORTSDIR}/security/sudo
 RUN_DEPENDS+=	nitrogen>0:${PORTSDIR}/sysutils/nitrogen
 RUN_DEPENDS+=	mplayer>0:${PORTSDIR}/multimedia/mplayer
-RUN_DEPENDS+=	chromium>0:${PORTSDIR}/www/chromium
 RUN_DEPENDS+=	firefox>0:${PORTSDIR}/www/firefox
 RUN_DEPENDS+=	conky>0:${PORTSDIR}/sysutils/conky
 RUN_DEPENDS+=	dmenu>0:${PORTSDIR}/x11/dmenu
