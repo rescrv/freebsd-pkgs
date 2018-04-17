@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20180217
+PORTVERSION=   20180218
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,6 +19,7 @@ RUN_DEPENDS+=	rsync>0:${PORTSDIR}/net/rsync
 RUN_DEPENDS+=	keychain>0:${PORTSDIR}/security/keychain
 RUN_DEPENDS+=	bash>0:${PORTSDIR}/shells/bash
 RUN_DEPENDS+=	zsh>0:${PORTSDIR}/shells/zsh
+RUN_DEPENDS+=	puppet5>0:${PORTSDIR}/sysutils/puppet5
 RUN_DEPENDS+=	tmux>0:${PORTSDIR}/sysutils/tmux
 RUN_DEPENDS+=	w3m>0:${PORTSDIR}/www/w3m
 

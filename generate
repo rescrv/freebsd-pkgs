@@ -61,7 +61,7 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20180217)
+p = Package('minimal', 20180218)
 p.depends_upon('archivers/redupe')
 p.depends_upon('dns/bind-tools')
 p.depends_upon('editors/vim-console')
@@ -70,6 +70,7 @@ p.depends_upon('net/rsync')
 p.depends_upon('security/keychain')
 p.depends_upon('shells/bash')
 p.depends_upon('shells/zsh')
+p.depends_upon('sysutils/puppet5')
 p.depends_upon('sysutils/tmux')
 p.depends_upon('www/w3m')
 
