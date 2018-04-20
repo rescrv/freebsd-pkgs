@@ -12,7 +12,7 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	dovecot2>0:${PORTSDIR}/mail/dovecot2
+RUN_DEPENDS+=	dovecot>0:${PORTSDIR}/mail/dovecot
 RUN_DEPENDS+=	postfix>0:${PORTSDIR}/mail/postfix
 RUN_DEPENDS+=	postgrey>0:${PORTSDIR}/mail/postgrey
 
