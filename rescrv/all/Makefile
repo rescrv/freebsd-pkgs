@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-all
-PORTVERSION=   20180416
+PORTVERSION=   20180419
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,6 +19,7 @@ RUN_DEPENDS+=	rescrv-consus-devel>0:${PORTSDIR}/rescrv/consus-devel
 RUN_DEPENDS+=	rescrv-writing>0:${PORTSDIR}/rescrv/writing
 RUN_DEPENDS+=	rescrv-desktop>0:${PORTSDIR}/rescrv/desktop
 RUN_DEPENDS+=	rescrv-workstation>0:${PORTSDIR}/rescrv/workstation
+RUN_DEPENDS+=	rescrv-mail-server>0:${PORTSDIR}/rescrv/mail-server
 
 do-install: build
 		@${DO_NADA}

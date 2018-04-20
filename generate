@@ -175,11 +175,11 @@ p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('rescrv/desktop', 'rescrv-desktop')
 p.depends_upon('rescrv/devel', 'rescrv-devel')
 
-#p = Package('mail-server', 20170302)
-#p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-#p.depends_upon('mail/dovecot2')
-#p.depends_upon('mail/postfix')
-#p.depends_upon('mail/postgrey')
+p = Package('mail-server', 20180419)
+p.depends_upon('rescrv/minimal', 'rescrv-minimal')
+p.depends_upon('mail/dovecot2')
+p.depends_upon('mail/postfix')
+p.depends_upon('mail/postgrey')
 
 meta_deps = []
 max_version = 0

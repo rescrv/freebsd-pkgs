@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-mail-server
-PORTVERSION=   20170302
+PORTVERSION=   20180419
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
