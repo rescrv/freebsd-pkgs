@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20180218
+PORTVERSION=   20180219
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
