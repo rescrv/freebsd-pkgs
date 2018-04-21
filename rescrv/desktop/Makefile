@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-desktop
-PORTVERSION=   20180311
+PORTVERSION=   20180420
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -26,6 +26,7 @@ RUN_DEPENDS+=	ledger>0:${PORTSDIR}/finance/ledger
 RUN_DEPENDS+=	xf86-input-synaptics>0:${PORTSDIR}/x11-drivers/xf86-input-synaptics
 RUN_DEPENDS+=	xf86-video-ati>0:${PORTSDIR}/x11-drivers/xf86-video-ati
 RUN_DEPENDS+=	xf86-video-intel>0:${PORTSDIR}/x11-drivers/xf86-video-intel
+RUN_DEPENDS+=	xf86-video-vesa>0:${PORTSDIR}/x11-drivers/xf86-video-vesa
 RUN_DEPENDS+=	bitstream-vera>0:${PORTSDIR}/x11-fonts/bitstream-vera
 RUN_DEPENDS+=	noto>0:${PORTSDIR}/x11-fonts/noto
 RUN_DEPENDS+=	terminus-font>0:${PORTSDIR}/x11-fonts/terminus-font
