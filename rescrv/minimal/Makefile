@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20180511
+PORTVERSION=   20180512
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -17,6 +17,7 @@ RUN_DEPENDS+=	vim-console>0:${PORTSDIR}/editors/vim-console
 RUN_DEPENDS+=	wget>0:${PORTSDIR}/ftp/wget
 RUN_DEPENDS+=	rsync>0:${PORTSDIR}/net/rsync
 RUN_DEPENDS+=	signify-port>0:${PORTSDIR}/rescrv/signify
+RUN_DEPENDS+=	encryptify>0:${PORTSDIR}/security/encryptify
 RUN_DEPENDS+=	keychain>0:${PORTSDIR}/security/keychain
 RUN_DEPENDS+=	bash>0:${PORTSDIR}/shells/bash
 RUN_DEPENDS+=	zsh>0:${PORTSDIR}/shells/zsh
