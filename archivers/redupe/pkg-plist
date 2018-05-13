@@ -1,0 +1,8 @@
+bin/fecsum
+bin/redupe
+bin/reundupe
+include/redupe.h
+lib/libredupe.a
+lib/libredupe.so
+lib/libredupe.so.0
+lib/libredupe.so.0.0.0
