@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-builder
-PORTVERSION=   20180416
+PORTVERSION=   20180417
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -13,6 +13,7 @@ NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	git>0:${PORTSDIR}/devel/git
+RUN_DEPENDS+=	qemu-user-static>0:${PORTSDIR}/emulators/qemu-user-static
 RUN_DEPENDS+=	portlint>0:${PORTSDIR}/ports-mgmt/portlint
 RUN_DEPENDS+=	portshaker>0:${PORTSDIR}/ports-mgmt/portshaker
 RUN_DEPENDS+=	poudriere>0:${PORTSDIR}/ports-mgmt/poudriere
