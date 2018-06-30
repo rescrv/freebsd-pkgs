@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20180421
+PORTVERSION=   20180629
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -23,6 +23,7 @@ RUN_DEPENDS+=	pkgconf>0:${PORTSDIR}/devel/pkgconf
 RUN_DEPENDS+=	valgrind>0:${PORTSDIR}/devel/valgrind
 RUN_DEPENDS+=	py27-cython>0:${PORTSDIR}/lang/cython
 RUN_DEPENDS+=	go>0:${PORTSDIR}/lang/go
+RUN_DEPENDS+=	rust>0:${PORTSDIR}/lang/rust
 RUN_DEPENDS+=	help2man>0:${PORTSDIR}/misc/help2man
 
 do-install: build
