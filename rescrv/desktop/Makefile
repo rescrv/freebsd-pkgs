@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-desktop
-PORTVERSION=   20180615
+PORTVERSION=   20190303
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -27,7 +27,7 @@ RUN_DEPENDS+=	xf86-video-ati>0:${PORTSDIR}/x11-drivers/xf86-video-ati
 RUN_DEPENDS+=	xf86-video-intel>0:${PORTSDIR}/x11-drivers/xf86-video-intel
 RUN_DEPENDS+=	xf86-video-vesa>0:${PORTSDIR}/x11-drivers/xf86-video-vesa
 RUN_DEPENDS+=	bitstream-vera>0:${PORTSDIR}/x11-fonts/bitstream-vera
-RUN_DEPENDS+=	noto-lite>0:${PORTSDIR}/x11-fonts/noto-lite
+RUN_DEPENDS+=	noto-basic>0:${PORTSDIR}/x11-fonts/noto-basic
 RUN_DEPENDS+=	terminus-font>0:${PORTSDIR}/x11-fonts/terminus-font
 RUN_DEPENDS+=	terminus-ttf>0:${PORTSDIR}/x11-fonts/terminus-ttf
 RUN_DEPENDS+=	xfontsel>0:${PORTSDIR}/x11-fonts/xfontsel
