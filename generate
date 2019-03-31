@@ -175,6 +175,9 @@ p.depends_upon('x11/xauth')
 p.depends_upon('x11/xbacklight')
 p.depends_upon('devel/awscli')
 
+p = Package('photography', 20190331)
+p.depends_upon('devel/hs-git-annex')
+
 p = Package('workstation', 20161020)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('rescrv/desktop', 'rescrv-desktop')

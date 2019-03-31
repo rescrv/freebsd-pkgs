@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-all
-PORTVERSION=   20190303
+PORTVERSION=   20190331
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -17,6 +17,7 @@ RUN_DEPENDS+=	rescrv-mail>0:${PORTSDIR}/rescrv/mail
 RUN_DEPENDS+=	rescrv-devel>0:${PORTSDIR}/rescrv/devel
 RUN_DEPENDS+=	rescrv-writing>0:${PORTSDIR}/rescrv/writing
 RUN_DEPENDS+=	rescrv-desktop>0:${PORTSDIR}/rescrv/desktop
+RUN_DEPENDS+=	rescrv-photography>0:${PORTSDIR}/rescrv/photography
 RUN_DEPENDS+=	rescrv-workstation>0:${PORTSDIR}/rescrv/workstation
 RUN_DEPENDS+=	rescrv-mail-server>0:${PORTSDIR}/rescrv/mail-server
 
