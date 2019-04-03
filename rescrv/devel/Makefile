@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20181213
+PORTVERSION=   20190403
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,7 +19,6 @@ RUN_DEPENDS+=	bazel>0:${PORTSDIR}/devel/bazel
 RUN_DEPENDS+=	bison>0:${PORTSDIR}/devel/bison
 RUN_DEPENDS+=	git>0:${PORTSDIR}/devel/git
 RUN_DEPENDS+=	libtool>0:${PORTSDIR}/devel/libtool
-RUN_DEPENDS+=	llvm38>0:${PORTSDIR}/devel/llvm38
 RUN_DEPENDS+=	llvm40>0:${PORTSDIR}/devel/llvm40
 RUN_DEPENDS+=	llvm50>0:${PORTSDIR}/devel/llvm50
 RUN_DEPENDS+=	llvm60>0:${PORTSDIR}/devel/llvm60
