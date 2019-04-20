@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20190403
+PORTVERSION=   20190420
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -25,7 +25,7 @@ RUN_DEPENDS+=	llvm60>0:${PORTSDIR}/devel/llvm60
 RUN_DEPENDS+=	llvm70>0:${PORTSDIR}/devel/llvm70
 RUN_DEPENDS+=	pkgconf>0:${PORTSDIR}/devel/pkgconf
 RUN_DEPENDS+=	valgrind>0:${PORTSDIR}/devel/valgrind
-RUN_DEPENDS+=	py27-cython>0:${PORTSDIR}/lang/cython
+RUN_DEPENDS+=	py36-cython>0:${PORTSDIR}/lang/cython
 RUN_DEPENDS+=	gcc48>0:${PORTSDIR}/lang/gcc48
 RUN_DEPENDS+=	gcc49>0:${PORTSDIR}/lang/gcc49
 RUN_DEPENDS+=	gcc5>0:${PORTSDIR}/lang/gcc5
