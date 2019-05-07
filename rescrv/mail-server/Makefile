@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-mail-server
-PORTVERSION=   20180419
+PORTVERSION=   20190505
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -13,6 +13,7 @@ NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	dovecot>0:${PORTSDIR}/mail/dovecot
+RUN_DEPENDS+=	opendkim>0:${PORTSDIR}/mail/opendkim
 RUN_DEPENDS+=	postfix>0:${PORTSDIR}/mail/postfix
 RUN_DEPENDS+=	postgrey>0:${PORTSDIR}/mail/postgrey
 
