@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-desktop
-PORTVERSION=   20190303
+PORTVERSION=   20190519
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -13,10 +13,13 @@ NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	zip>0:${PORTSDIR}/archivers/zip
+RUN_DEPENDS+=	spotifyd>0:${PORTSDIR}/audio/spotifyd
 RUN_DEPENDS+=	dmenu>0:${PORTSDIR}/x11/dmenu
 RUN_DEPENDS+=	parcellite>0:${PORTSDIR}/deskutils/parcellite
 RUN_DEPENDS+=	sudo>0:${PORTSDIR}/security/sudo
 RUN_DEPENDS+=	feh>0:${PORTSDIR}/graphics/feh
+RUN_DEPENDS+=	drm-fbsd12.0-kmod>0:${PORTSDIR}/graphics/drm-fbsd12.0-kmod
+RUN_DEPENDS+=	hs-git-annex>0:${PORTSDIR}/devel/hs-git-annex
 RUN_DEPENDS+=	mplayer>0:${PORTSDIR}/multimedia/mplayer
 RUN_DEPENDS+=	firefox>0:${PORTSDIR}/www/firefox
 RUN_DEPENDS+=	conky>0:${PORTSDIR}/sysutils/conky
