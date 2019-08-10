@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20190506
+PORTVERSION=   20190810
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,9 +19,9 @@ RUN_DEPENDS+=	bazel>0:${PORTSDIR}/devel/bazel
 RUN_DEPENDS+=	bison>0:${PORTSDIR}/devel/bison
 RUN_DEPENDS+=	git>0:${PORTSDIR}/devel/git
 RUN_DEPENDS+=	libtool>0:${PORTSDIR}/devel/libtool
-RUN_DEPENDS+=	llvm40>0:${PORTSDIR}/devel/llvm40
 RUN_DEPENDS+=	llvm60>0:${PORTSDIR}/devel/llvm60
 RUN_DEPENDS+=	llvm70>0:${PORTSDIR}/devel/llvm70
+RUN_DEPENDS+=	llvm80>0:${PORTSDIR}/devel/llvm80
 RUN_DEPENDS+=	pkgconf>0:${PORTSDIR}/devel/pkgconf
 RUN_DEPENDS+=	valgrind>0:${PORTSDIR}/devel/valgrind
 RUN_DEPENDS+=	py36-cython>0:${PORTSDIR}/lang/cython
