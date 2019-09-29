@@ -124,6 +124,9 @@ p.depends_upon('lang/go')
 p.depends_upon('lang/rust')
 p.depends_upon('misc/help2man')
 
+p = Package('executive', 20190928)
+p.depends_upon('deskutils/taskwarrior')
+
 p = Package('writing', 20170301)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('math/gnuplot')
