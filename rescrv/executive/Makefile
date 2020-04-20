@@ -12,6 +12,8 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	taskwarrior>0:${PORTSDIR}/deskutils/taskwarrior
+RUN_DEPENDS+=	taskd>0:${PORTSDIR}/deskutils/taskd
+RUN_DEPENDS+=	vit>0:${PORTSDIR}/deskutils/vit
 
 do-install: build
 		@${DO_NADA}

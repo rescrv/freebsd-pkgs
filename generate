@@ -106,6 +106,8 @@ p.depends_upon('lang/rust')
 
 p = Package('executive', 20190928)
 p.depends_upon('deskutils/taskwarrior')
+p.depends_upon('deskutils/taskd')
+p.depends_upon('deskutils/vit')
 
 p = Package('writing', 20170301)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
