@@ -117,11 +117,6 @@ p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('photography', 20190410)
 
-p = Package('workstation', 20161020)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('rescrv/desktop', 'rescrv-desktop')
-p.depends_upon('rescrv/devel', 'rescrv-devel')
-
 p = Package('mail-server', 20190505)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('mail/dovecot')

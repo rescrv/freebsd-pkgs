@@ -18,7 +18,6 @@ RUN_DEPENDS+=	rescrv-devel>0:${PORTSDIR}/rescrv/devel
 RUN_DEPENDS+=	rescrv-executive>0:${PORTSDIR}/rescrv/executive
 RUN_DEPENDS+=	rescrv-writing>0:${PORTSDIR}/rescrv/writing
 RUN_DEPENDS+=	rescrv-photography>0:${PORTSDIR}/rescrv/photography
-RUN_DEPENDS+=	rescrv-workstation>0:${PORTSDIR}/rescrv/workstation
 RUN_DEPENDS+=	rescrv-mail-server>0:${PORTSDIR}/rescrv/mail-server
 
 do-install: build
