@@ -111,7 +111,7 @@ p.depends_upon('deskutils/vit')
 
 p = Package('writing', 20170301)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('math/gnuplot')
+p.depends_upon('math/gnuplot-lite')
 p.depends_upon('textproc/py-markdown')
 p.depends_upon('textproc/py-pygments')
 p.depends_upon('www/py-pelican')
