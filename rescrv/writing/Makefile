@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-writing
-PORTVERSION=   20170301
+PORTVERSION=   20200420
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
