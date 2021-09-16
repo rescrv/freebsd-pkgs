@@ -16,7 +16,6 @@ RUN_DEPENDS+=	p5-Term-ReadLine-Gnu>0:${PORTSDIR}/devel/p5-Term-ReadLine-Gnu
 RUN_DEPENDS+=	msmtp>0:${PORTSDIR}/mail/msmtp
 RUN_DEPENDS+=	mutt>0:${PORTSDIR}/mail/mutt
 RUN_DEPENDS+=	notmuch>0:${PORTSDIR}/mail/notmuch
-RUN_DEPENDS+=	offlineimap>0:${PORTSDIR}/mail/offlineimap
 RUN_DEPENDS+=	p5-Mail-Box>0:${PORTSDIR}/mail/p5-Mail-Box
 RUN_DEPENDS+=	p5-Mail-Tools>0:${PORTSDIR}/mail/p5-Mail-Tools
 RUN_DEPENDS+=	p5-File-Which>0:${PORTSDIR}/sysutils/p5-File-Which
