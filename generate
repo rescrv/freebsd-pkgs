@@ -81,7 +81,7 @@ p.depends_upon('www/w3m')
 
 p = Package('builder', 20200423)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('devel/git-lite')
+p.depends_upon('devel/git')
 p.depends_upon('ports-mgmt/portlint')
 p.depends_upon('ports-mgmt/portshaker')
 p.depends_upon('ports-mgmt/poudriere')
@@ -100,7 +100,7 @@ p.depends_upon('textproc/p5-String-ShellQuote')
 
 p = Package('devel', 20200423)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('devel/git-lite')
+p.depends_upon('devel/git')
 p.depends_upon('lang/rust')
 
 p = Package('executive', 20190928)
