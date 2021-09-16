@@ -12,7 +12,7 @@ NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	git>0:${PORTSDIR}/devel/git
+RUN_DEPENDS+=	git@lite>0:${PORTSDIR}/devel/git@lite
 RUN_DEPENDS+=	portlint>0:${PORTSDIR}/ports-mgmt/portlint
 RUN_DEPENDS+=	portshaker>0:${PORTSDIR}/ports-mgmt/portshaker
 RUN_DEPENDS+=	poudriere>0:${PORTSDIR}/ports-mgmt/poudriere
