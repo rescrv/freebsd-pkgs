@@ -8,8 +8,11 @@ EXTRACT_ONLY=  # none
 MAINTAINER=    robert@rescrv.net
 COMMENT=       minimal meta package
 
+NO_MTREE=      yes
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
+
+USES=          metaport
 
 RUN_DEPENDS+=	redupe>0:${PORTSDIR}/archivers/redupe
 RUN_DEPENDS+=	bind-tools>0:${PORTSDIR}/dns/bind-tools

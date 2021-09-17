@@ -8,8 +8,11 @@ EXTRACT_ONLY=  # none
 MAINTAINER=    robert@rescrv.net
 COMMENT=       mail meta package
 
+NO_MTREE=      yes
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
+
+USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	p5-Term-ReadLine-Gnu>0:${PORTSDIR}/devel/p5-Term-ReadLine-Gnu

@@ -8,8 +8,11 @@ EXTRACT_ONLY=  # none
 MAINTAINER=    robert@rescrv.net
 COMMENT=       writing meta package
 
+NO_MTREE=      yes
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
+
+USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	gnuplot-lite>0:${PORTSDIR}/math/gnuplot-lite

@@ -8,8 +8,11 @@ EXTRACT_ONLY=  # none
 MAINTAINER=    robert@rescrv.net
 COMMENT=       mail-server meta package
 
+NO_MTREE=      yes
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
+
+USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	dovecot>0:${PORTSDIR}/mail/dovecot

@@ -8,8 +8,11 @@ EXTRACT_ONLY=  # none
 MAINTAINER=    robert@rescrv.net
 COMMENT=       photography meta package
 
+NO_MTREE=      yes
 NO_BUILD=      yes
 NO_WRKSUBDIR=  yes
+
+USES=          metaport
 
 
 
