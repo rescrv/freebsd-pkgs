@@ -31,7 +31,7 @@ class Package(metaclass=IterRegistry):
             os.makedirs('rescrv/%s' % self.name)
         f = open('rescrv/%s/Makefile' % self.name, 'w')
         deps = '\n'.join(['RUN_DEPENDS+=	%s>0:${PORTSDIR}/%s' %
-                                (x[0].split('@')[0], x[1])
+                                (x[0].replace('@', '-'), x[1])
                           for x in self.depends])
         uses = ''
         if self.uses:
