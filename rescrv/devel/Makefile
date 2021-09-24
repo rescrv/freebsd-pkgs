@@ -16,6 +16,7 @@ USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	git-lite>0:${PORTSDIR}/devel/git@lite
+RUN_DEPENDS+=	rust>0:${PORTSDIR}/lang/rust
 
 do-install: build
 		@${DO_NADA}

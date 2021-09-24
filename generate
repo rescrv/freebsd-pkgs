@@ -105,7 +105,7 @@ p.depends_upon('textproc/p5-String-ShellQuote')
 p = Package('devel', 20210917)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('devel/git@lite')
-#p.depends_upon('lang/rust')
+p.depends_upon('lang/rust')
 
 p = Package('executive', 20190928)
 p.depends_upon('deskutils/taskwarrior')
