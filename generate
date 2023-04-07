@@ -105,6 +105,9 @@ p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('photography', 20190410)
 
+p = Package('multimedia', 20230406)
+p.depends_upon('multimedia/ffmpeg')
+
 meta_deps = []
 max_version = 0
 

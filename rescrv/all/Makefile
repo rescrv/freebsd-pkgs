@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-all
-PORTVERSION=   20210917
+PORTVERSION=   20230406
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -19,6 +19,7 @@ RUN_DEPENDS+=	rescrv-builder>0:${PORTSDIR}/rescrv/builder
 RUN_DEPENDS+=	rescrv-devel>0:${PORTSDIR}/rescrv/devel
 RUN_DEPENDS+=	rescrv-writing>0:${PORTSDIR}/rescrv/writing
 RUN_DEPENDS+=	rescrv-photography>0:${PORTSDIR}/rescrv/photography
+RUN_DEPENDS+=	rescrv-multimedia>0:${PORTSDIR}/rescrv/multimedia
 
 do-install: build
 		@${DO_NADA}
