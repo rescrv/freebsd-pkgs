@@ -79,7 +79,6 @@ p.depends_upon('security/encryptify')
 p.depends_upon('security/keychain')
 p.depends_upon('shells/bash')
 p.depends_upon('shells/zsh')
-#p.depends_upon('sysutils/shuf')
 p.depends_upon('sysutils/stow')
 p.depends_upon('sysutils/tmux')
 p.depends_upon('www/w3m')
@@ -91,26 +90,10 @@ p.depends_upon('ports-mgmt/portlint')
 p.depends_upon('ports-mgmt/portshaker')
 p.depends_upon('ports-mgmt/poudriere')
 
-p = Package('mail', 20161007)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('devel/p5-Term-ReadLine-Gnu')
-p.depends_upon('mail/msmtp')
-p.depends_upon('mail/mutt')
-p.depends_upon('mail/notmuch')
-p.depends_upon('mail/p5-Mail-Box')
-p.depends_upon('mail/p5-Mail-Tools')
-p.depends_upon('sysutils/p5-File-Which')
-p.depends_upon('textproc/p5-String-ShellQuote')
-
 p = Package('devel', 20210917)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('devel/git@lite')
 p.depends_upon('lang/rust')
-
-p = Package('executive', 20190928)
-p.depends_upon('deskutils/taskwarrior')
-p.depends_upon('deskutils/taskd')
-p.depends_upon('deskutils/vit')
 
 p = Package('writing', 20200420)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
@@ -121,13 +104,6 @@ p.depends_upon('www/py-pelican')
 p.depends_upon('www/tidy', 'tidy4')
 
 p = Package('photography', 20190410)
-
-p = Package('mail-server', 20190505)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('mail/dovecot')
-p.depends_upon('mail/opendkim')
-p.depends_upon('mail/postfix')
-p.depends_upon('mail/postgrey')
 
 meta_deps = []
 max_version = 0
