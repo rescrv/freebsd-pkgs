@@ -66,10 +66,10 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20230407)
+p = Package('minimal', 20230408)
 p.depends_upon('archivers/redupe')
 p.depends_upon('dns/bind-tools')
-p.depends_upon('editors/vim@console')
+p.depends_upon('editors/vim@console', 'vim')
 p.depends_upon('ftp/wget')
 p.depends_upon('lang/python2')
 p.depends_upon('lang/python3')

@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20230407
+PORTVERSION=   20230408
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -16,7 +16,7 @@ USES=          metaport
 
 RUN_DEPENDS+=	redupe>0:${PORTSDIR}/archivers/redupe
 RUN_DEPENDS+=	bind-tools>0:${PORTSDIR}/dns/bind-tools
-RUN_DEPENDS+=	vim-console>0:${PORTSDIR}/editors/vim@console
+RUN_DEPENDS+=	vim>0:${PORTSDIR}/editors/vim@console
 RUN_DEPENDS+=	wget>0:${PORTSDIR}/ftp/wget
 RUN_DEPENDS+=	python2>0:${PORTSDIR}/lang/python2
 RUN_DEPENDS+=	python3>0:${PORTSDIR}/lang/python3
