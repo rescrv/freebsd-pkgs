@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-writing
-PORTVERSION=   20200420
+PORTVERSION=   20230407
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -16,6 +16,7 @@ USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	gnuplot-lite>0:${PORTSDIR}/math/gnuplot-lite
+RUN_DEPENDS+=	hs-pandoc>0:${PORTSDIR}/textproc/hs-pandoc
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}markdown>0:${PORTSDIR}/textproc/py-markdown
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pygments>0:${PORTSDIR}/textproc/py-pygments
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}pelican>0:${PORTSDIR}/www/py-pelican
