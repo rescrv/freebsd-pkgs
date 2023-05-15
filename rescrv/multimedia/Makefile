@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-multimedia
-PORTVERSION=   20230409
+PORTVERSION=   20230515
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -15,6 +15,7 @@ NO_WRKSUBDIR=  yes
 USES=          metaport
 
 RUN_DEPENDS+=	ffmpeg>0:${PORTSDIR}/multimedia/ffmpeg
+RUN_DEPENDS+=	mplayer>0:${PORTSDIR}/multimedia/mplayer
 RUN_DEPENDS+=	x264>0:${PORTSDIR}/multimedia/x264
 
 do-install: build
