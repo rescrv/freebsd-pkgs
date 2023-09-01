@@ -66,7 +66,7 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20230408)
+p = Package('minimal', 20230901)
 p.depends_upon('archivers/redupe')
 p.depends_upon('dns/bind-tools')
 p.depends_upon('editors/vim@console', 'vim')
@@ -90,26 +90,26 @@ p.depends_upon('ports-mgmt/portlint')
 p.depends_upon('ports-mgmt/portshaker')
 p.depends_upon('ports-mgmt/poudriere')
 
-p = Package('devel', 20210917)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('devel/git@lite')
-p.depends_upon('lang/rust')
-
-p = Package('writing', 20230407)
-p.depends_upon('rescrv/minimal', 'rescrv-minimal')
-p.depends_upon('math/gnuplot-lite')
-p.depends_upon('textproc/hs-pandoc')
-p.depends_upon('textproc/py-markdown')
-p.depends_upon('textproc/py-pygments')
-p.depends_upon('www/py-pelican')
-p.depends_upon('www/tidy', 'tidy4')
-
-p = Package('photography', 20190410)
-
-p = Package('multimedia', 20230515)
-p.depends_upon('multimedia/ffmpeg')
-p.depends_upon('multimedia/mplayer')
-p.depends_upon('multimedia/x264')
+#p = Package('devel', 20210917)
+#p.depends_upon('rescrv/minimal', 'rescrv-minimal')
+#p.depends_upon('devel/git@lite')
+#p.depends_upon('lang/rust')
+#
+#p = Package('writing', 20230407)
+#p.depends_upon('rescrv/minimal', 'rescrv-minimal')
+#p.depends_upon('math/gnuplot-lite')
+#p.depends_upon('textproc/hs-pandoc')
+#p.depends_upon('textproc/py-markdown')
+#p.depends_upon('textproc/py-pygments')
+#p.depends_upon('www/py-pelican')
+#p.depends_upon('www/tidy', 'tidy4')
+#
+#p = Package('photography', 20190410)
+#
+#p = Package('multimedia', 20230515)
+#p.depends_upon('multimedia/ffmpeg')
+#p.depends_upon('multimedia/mplayer')
+#p.depends_upon('multimedia/x264')
 
 meta_deps = []
 max_version = 0

@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-minimal
-PORTVERSION=   20230408
+PORTVERSION=   20230901
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
