@@ -1,4 +1,4 @@
-PORTNAME=      rescrv-all
+PORTNAME=      rescrv-devel
 PORTVERSION=   20230903
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
@@ -6,7 +6,7 @@ DISTFILES=     # none
 EXTRACT_ONLY=  # none
 
 MAINTAINER=    robert@rescrv.net
-COMMENT=       all meta package
+COMMENT=       devel meta package
 
 NO_MTREE=      yes
 NO_BUILD=      yes
@@ -15,9 +15,8 @@ NO_WRKSUBDIR=  yes
 USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	rescrv-builder>0:${PORTSDIR}/rescrv/builder
-RUN_DEPENDS+=	rescrv-devel>0:${PORTSDIR}/rescrv/devel
-RUN_DEPENDS+=	rescrv-multimedia>0:${PORTSDIR}/rescrv/multimedia
+RUN_DEPENDS+=	git-lite>0:${PORTSDIR}/devel/git@lite
+RUN_DEPENDS+=	rust>0:${PORTSDIR}/lang/rust
 
 do-install: build
 		@${DO_NADA}
