@@ -82,7 +82,7 @@ p.depends_upon('sysutils/stow')
 p.depends_upon('sysutils/tmux')
 p.depends_upon('www/w3m')
 
-p = Package('builder', 20200423)
+p = Package('builder', 20230903)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('devel/git@lite')
 p.depends_upon('ports-mgmt/portlint')

@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-builder
-PORTVERSION=   20200423
+PORTVERSION=   20230903
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
