@@ -66,20 +66,17 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20230903)
+p = Package('minimal', 20230904)
 p.depends_upon('archivers/redupe')
 p.depends_upon('editors/vim@console', 'vim')
-p.depends_upon('ftp/wget')
 p.depends_upon('lang/python3')
 p.depends_upon('net/rsync')
 p.depends_upon('rescrv/signify', 'signify-port')
 p.depends_upon('security/encryptify')
-p.depends_upon('security/keychain')
 p.depends_upon('shells/bash')
 p.depends_upon('shells/zsh')
 p.depends_upon('sysutils/stow')
 p.depends_upon('sysutils/tmux')
-p.depends_upon('www/w3m')
 
 p = Package('builder', 20230903)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
@@ -93,9 +90,8 @@ p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('devel/git@lite')
 p.depends_upon('lang/rust')
 
-p = Package('multimedia', 20230903)
+p = Package('multimedia', 20230904)
 p.depends_upon('multimedia/ffmpeg')
-p.depends_upon('multimedia/mplayer')
 p.depends_upon('multimedia/x264')
 
 meta_deps = []
