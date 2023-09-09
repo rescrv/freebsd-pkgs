@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20230908
+PORTVERSION=   20230909
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -16,6 +16,7 @@ USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
 RUN_DEPENDS+=	cmake>0:${PORTSDIR}/devel/cmake
+RUN_DEPENDS+=	llvm>0:${PORTSDIR}/devel/llvm
 RUN_DEPENDS+=	git-lite>0:${PORTSDIR}/devel/git@lite
 RUN_DEPENDS+=	rust>0:${PORTSDIR}/lang/rust
 
