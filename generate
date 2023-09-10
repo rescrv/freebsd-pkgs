@@ -97,6 +97,9 @@ p = Package('multimedia', 20230904)
 p.depends_upon('multimedia/ffmpeg')
 p.depends_upon('multimedia/x264')
 
+p = Package('misc', 20230904)
+p.depends_upon('mail/opensmtpd')
+
 meta_deps = []
 max_version = 0
 
