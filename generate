@@ -93,8 +93,9 @@ p.depends_upon('devel/llvm')
 p.depends_upon('devel/git@lite')
 p.depends_upon('lang/rust')
 
-p = Package('multimedia', 20230904)
+p = Package('multimedia', 20230915)
 p.depends_upon('multimedia/ffmpeg')
+p.depends_upon('multimedia/minidlna')
 p.depends_upon('multimedia/x264')
 
 p = Package('misc', 20230904)
