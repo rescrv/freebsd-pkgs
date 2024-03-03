@@ -85,12 +85,10 @@ p.depends_upon('ports-mgmt/portlint')
 p.depends_upon('ports-mgmt/portshaker')
 p.depends_upon('ports-mgmt/poudriere')
 
-p = Package('devel', 20230909)
+p = Package('devel', 20240302)
 p.depends_upon('rescrv/minimal', 'rescrv-minimal')
 p.depends_upon('devel/cmake')
-p.depends_upon('devel/llvm')
 p.depends_upon('devel/git@lite')
-p.depends_upon('lang/rust')
 
 p = Package('multimedia', 20240302)
 #p.depends_upon('multimedia/ffmpeg')
