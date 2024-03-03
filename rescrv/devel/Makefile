@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20240302
+PORTVERSION=   20240303
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
