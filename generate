@@ -66,7 +66,7 @@ do-install: build
         f.flush()
         f.close()
 
-p = Package('minimal', 20230908)
+p = Package('minimal', 20240302)
 p.depends_upon('archivers/redupe')
 p.depends_upon('editors/vim@console', 'vim')
 p.depends_upon('lang/python3')
@@ -76,7 +76,6 @@ p.depends_upon('security/keychain')
 p.depends_upon('security/encryptify')
 p.depends_upon('shells/bash')
 p.depends_upon('shells/zsh')
-p.depends_upon('sysutils/stow')
 p.depends_upon('sysutils/tmux')
 
 p = Package('builder', 20230903)
@@ -93,13 +92,10 @@ p.depends_upon('devel/llvm')
 p.depends_upon('devel/git@lite')
 p.depends_upon('lang/rust')
 
-p = Package('multimedia', 20230916)
-p.depends_upon('multimedia/ffmpeg')
-p.depends_upon('multimedia/x264')
-p.depends_upon('net/minidlna')
-
-p = Package('misc', 20230904)
-p.depends_upon('mail/opensmtpd')
+p = Package('multimedia', 20240302)
+#p.depends_upon('multimedia/ffmpeg')
+#p.depends_upon('multimedia/x264')
+#p.depends_upon('net/minidlna')
 
 meta_deps = []
 max_version = 0
