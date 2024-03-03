@@ -1,5 +1,5 @@
 PORTNAME=      rescrv-devel
-PORTVERSION=   20240303
+PORTVERSION=   20240304
 CATEGORIES=    rescrv
 MASTER_SITES=  # none
 DISTFILES=     # none
@@ -15,7 +15,7 @@ NO_WRKSUBDIR=  yes
 USES=          metaport
 
 RUN_DEPENDS+=	rescrv-minimal>0:${PORTSDIR}/rescrv/minimal
-RUN_DEPENDS+=	cmake>0:${PORTSDIR}/devel/cmake
+RUN_DEPENDS+=	cmake-core>0:${PORTSDIR}/devel/cmake-core
 RUN_DEPENDS+=	git-lite>0:${PORTSDIR}/devel/git@lite
 
 do-install: build
